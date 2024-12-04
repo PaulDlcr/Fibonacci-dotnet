@@ -10,4 +10,4 @@ FROM docker.io/library/alpine:latest AS base
 WORKDIR /app
 COPY --from=build /publish .
 ENV DOTNET_SYSTEM_GLOBALIZATION_INVARIANT=1
-ENTRYPOINT ["/Leonardo.Web"]
+ENTRYPOINT ["/app/Leonardo.Web"]
